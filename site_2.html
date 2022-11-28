@@ -1,0 +1,52 @@
+[16:14] Mathias Weber
+
+<!doctype html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startseite</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- <script src="data.js"></script> -->
+    <script src="script_02.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({active: true});
+        } );
+    </script>
+</head>
+<body>
+ 
+<div id="accordion">
+  <h3>Audit</h3>
+  <div>
+    <p>
+       <input "auditID" > 
+       <input "auditScope" >   
+       <input "auditNote" >   
+       <input "auditDate" >   
+       <input "revisionCyle" >
+    </p>
+  </div>
+  <h3>Person</h3>
+  <div>
+    <p>
+      <input "personID" > 
+      <input "personVorname" >   
+      <input "personNachname" >      
+</p>
+  </div>
+  <h3>Auditstandard</h3>
+  <div>
+    <p>
+      <input "auditStandardName" > 
+    </p>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
+
