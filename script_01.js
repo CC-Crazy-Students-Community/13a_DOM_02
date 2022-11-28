@@ -1,5 +1,5 @@
 let meinDiv = document.getElementById( "accordion" );
-window.addEventListener( "load", bodyDingens );
+window.addEventListener( "load", bodyDingens, false );
 function bodyDingens() {
     alert( "tewrt" );
     let meinH3 = document.createElement( "h3" );
