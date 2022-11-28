@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <!-- head  -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet"type="text/css" />
+        <title>DOM und JavaScript Examples III</title>
+    </head>
+
+    <!-- body  -->
+    <body>
+        <button name="reload" value="Refresh Page" onClick="window.location.reload()">reload</button>
+        <div id="accordion">
+            <h3>Audit</h3>
+            <p>
+                <input id="auditID" />
+                <input id="auditScope" />
+                <input id="auditNote" />
+                <input id="auditDate" />
+                <input id="revisionCyle" />
+            </p>
+            <h3>Person</h3>
+            <p>
+                <input id="personID" />
+                <input id="personVorname" />
+                <input id="personNachname" />    
+            </p>
+            <h3>Auditstandard</h3>
+            <p>
+                <input id="auditStandardName" />
+            </p>
+        </div>
+    </body>
+
+    <!-- scripte  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="script_03.js"></script> 
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion( { active:true } );
+        } );
+    </script>
+</html>
